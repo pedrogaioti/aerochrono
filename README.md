@@ -25,3 +25,37 @@ AeroChrono is a historical aviation companion for flight simulation. The product
 - Validation: Zod
 
 See `AGENTS.md` and `docs/` before making changes.
+
+## Development
+
+Requirements:
+
+- Node.js 22
+- pnpm 11.19.0
+
+Install dependencies and create a local environment file:
+
+```bash
+pnpm install
+cp .env.example .env.local
+```
+
+Run both applications, or start one application at a time:
+
+```bash
+pnpm dev
+pnpm dev:mobile
+pnpm dev:admin
+```
+
+Run the repository quality gates:
+
+```bash
+pnpm lint
+pnpm typecheck
+pnpm test
+pnpm format:check
+```
+
+The workspace contains the Expo application in `apps/mobile`, the Next.js
+administration application in `apps/admin`, and shared code in `packages/`.

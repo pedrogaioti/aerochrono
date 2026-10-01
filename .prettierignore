@@ -1,0 +1,6 @@
+.agent/
+docs/
+AGENTS.md
+CLAUDE.md
+README.md
+pnpm-lock.yaml
