@@ -1,0 +1,25 @@
+{
+  "name": "@aerochrono/admin",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@aerochrono/database": "workspace:*",
+    "@aerochrono/types": "workspace:*",
+    "@aerochrono/ui": "workspace:*",
+    "@aerochrono/utils": "workspace:*",
+    "next": "^15.3.4",
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.30",
+    "@types/react": "19.0.14",
+    "@types/react-dom": "19.0.4"
+  }
+}
